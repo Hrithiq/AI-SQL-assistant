@@ -1,6 +1,6 @@
-# Optum SQL AI Assistant
+#  SQL AI Assistant
 
-An AI-powered SQL assistant for healthcare data analysts at Optum. Combines semantic schema search, self-healing query correction, and BI tool integration to help analysts write, debug, and optimize SQL queries against Claims, Members, Provider, and Fraud data warehouses.
+An AI-powered SQL assistant for healthcare data analysts. Combines semantic schema search, self-healing query correction, and BI tool integration to help analysts write, debug, and optimize SQL queries against Claims, Members, Provider, and Fraud data warehouses.
 
 ---
 
@@ -18,7 +18,7 @@ An AI-powered SQL assistant for healthcare data analysts at Optum. Combines sema
 ## Architecture
 
 ```
-optum-sql-ai/
+sql-ai/
 ├── src/
 │   ├── phase_a/            # Knowledge retrieval: schema harvesting + vector store
 │   │   ├── schema_collector.py
@@ -63,8 +63,8 @@ optum-sql-ai/
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_ORG/optum-sql-ai.git
-cd optum-sql-ai
+git clone https://github.com/YOUR_ORG/sql-ai.git
+cd sql-ai
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -152,7 +152,7 @@ rows, corrections_log = run_with_healing(my_sql, conn)
 | `ANTHROPIC_API_KEY` | Anthropic API key (claude-opus-4-5) |
 | `OPENAI_API_KEY` | OpenAI key for embeddings |
 | `PINECONE_API_KEY` | Pinecone API key |
-| `PINECONE_INDEX_NAME` | Pinecone index name (default: `optum-schema`) |
+| `PINECONE_INDEX_NAME` | Pinecone index name (default: ` -schema`) |
 | `SQLSERVER_CONN_STR` | SQL Server ODBC connection string |
 | `SNOWFLAKE_ACCOUNT` | Snowflake account identifier |
 | `SNOWFLAKE_USER` | Snowflake username |
@@ -207,4 +207,4 @@ pytest tests/ -v
 
 ## License
 
-Internal use only — Optum / UnitedHealth Group. Not for public distribution.
+Internal use only —   / UnitedHealth Group. Not for public distribution.
