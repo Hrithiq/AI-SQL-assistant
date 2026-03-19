@@ -1,5 +1,5 @@
 """
-End-to-end demo of the Optum SQL AI Assistant.
+End-to-end demo of the SQL AI Assistant.
 Runs all three phases without a live database connection
 so you can verify your API keys and vector store work correctly.
 """
