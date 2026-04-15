@@ -207,4 +207,4 @@ pytest tests/ -v
 
 ## License
 
-Internal use only —   / UnitedHealth Group. Not for public distribution.
+Internal use only
